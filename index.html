@@ -17,19 +17,20 @@
     <!-- ****************NAV*************** -->
     <header>
       <nav>
-        <ul>
-          <li><a href="">home</a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">contact</a></li>
+        <ul class="navBar">
+          <li class="navBarLi"><a href="">home</a></li>
+          <li class="navBarLi"><a href="">about</a></li>
+          <li class="navBarLi"><a href="">contact</a></li>
           <li>
             <img
+              class="navBarImg"
               src="./assets/img/logo rio roller.webp"
               alt="logo rio roller"
             />
           </li>
-          <li><a href="">collection</a></li>
-          <li><a href="">shops</a></li>
-          <li><a href="">stories</a></li>
+          <li class="navBarLi"><a href="">collection</a></li>
+          <li class="navBarLi"><a href="">shops</a></li>
+          <li class="navBarLi"><a href="">stories</a></li>
         </ul>
       </nav>
     </header>
@@ -50,15 +51,20 @@
 
     <!-- **************ORIGIN SECTION************** -->
     <section class="originSection">
-      <h2>Love my Rios,<br />Love my Life</h2>
-      <p>
-        Rio Roller is the original fashion quad skate brand since the 90's.<br />Designed
-        in the UK, Distributed worldwide.
-      </p>
+      <div class="flexDiv">
+        <h2>
+          Love my Rios,<br /><span class="white">...................</span>Love
+          my Life
+        </h2>
+        <p>
+          Rio Roller is the original fashion quad skate brand since the 90's.<br />Designed
+          in the UK, Distributed worldwide.
+        </p>
+      </div>
     </section>
 
     <!-- **************PRODUCTS SECTION************** -->
-    <section class="productssection">
+    <section class="productsSection">
       <div class="gridProducts">
         <div class="productsContainer">
           <div class="productsImg"></div>
@@ -100,7 +106,7 @@
     <section class="veganSection">
       <div class="veganDiv">
         <p>the</p>
-        <h2>vegan stories</h2>
+        <h2>vegan story</h2>
         <p>
           As a brand we are proud to be supporting the Vegan movement by using
           as many synthetic alternatives & cruelty free products as possible.
@@ -125,8 +131,10 @@
           question may have already been answered!
         </p>
         <form action="">
-          <input type="text" />
-          <input type="text" />
+          <div class="input">
+            <input type="text" />
+            <input type="text" />
+          </div>
           <textarea id=""></textarea>
           <button type="submit">hello!</button>
         </form>

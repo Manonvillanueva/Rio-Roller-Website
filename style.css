@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "cheddar jack";
+  src: url(./assets/fonts/Cheddar\ Jack.ttf);
+}
+
+@font-face {
+  font-family: "lato-light";
+  src: url(./assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: "lulo clean w01 one bold";
+  src: url(./assets/fonts/Lulo\ Clean\ W01\ One\ Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* *******************NAV***************** */
+header {
+  background-color: #ffff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+.navBarLi a {
+  text-transform: uppercase;
+  font-family: "lato-light", verdana;
+  font-size: 12px;
+  color: #111;
+  text-decoration: none;
+}
+
+.navBarLi :hover {
+  color: #ef84b4;
+}
+
+.navBarImg {
+  max-width: 120px;
+}
+
+/* *****************NAV BOTTOM**************** */
+.navBottom {
+  padding-top: 165px;
+}
+
+#upButton {
+  z-index: 1;
+  position: fixed;
+  right: 2%;
+  bottom: 50%;
+  background-color: #ef84b4;
+  border-radius: 50px;
+  color: #ffff;
+}
+
+#upButton i {
+  color: #ffff;
+  padding: 10px;
+}
+
+.topDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  background-color: #111;
+  color: #ffff;
+  text-transform: uppercase;
+}
+
+.topDiv h1 {
+  font-family: "lulo clean w01 one bold", verdana;
+  font-size: 18px;
+  padding-right: 50px;
+}
+
+.topDiv a {
+  text-decoration: none;
+  font-family: "lato-light", verdana;
+  padding: 5px 12px;
+  background-color: #ffff;
+  color: #111;
+}
+
+.topDiv a:hover {
+  background-color: rgb(141, 255, 75);
+}
+
+.bottomDiv {
+  background: url(./assets/img/bg\ header.webp) center/cover;
+  min-height: 1000px;
+  position: relative;
+}
+
+.bottomDiv a {
+  position: absolute;
+  bottom: 80px;
+  right: 50%;
+  transform: translateX(50%);
+  text-decoration: none;
+  background-color: #fff;
+  border: 2px solid #111;
+  font-family: "lato-light", verdana;
+  text-transform: uppercase;
+  padding: 15px 20px;
+}
+
+/* ********************ORIGIN SECTION****************** */
+.originSection {
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexDiv {
+  text-align: center;
+}
+
+.flexDiv h2 {
+  font-family: "cheddar jack", verdana;
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+
+.white {
+  color: #fff;
+}
+
+.flexDiv p {
+  font-family: "lato-light", verdana;
+  line-height: 24px;
+}
+
+/* ********************************* */
+.productsSection {
+  background-color: #b5f3da;
+  min-height: 670px;
+  display: flex;
+  align-items: center;
+}
+
+.productsContainer {
+}
+
+.gridProducts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.productsImg {
+  background: url(./assets/img/rio\ roller.webp);
+}
+
+.productsImg1 {
+  background: url(./assets/img/casque\ rio\ .webp);
+}
+
+.productsImg2 {
+  background: url(./assets/img/rio\ wheels.webp);
+}
+
+.productsTxt {
+  background-color: #fff;
+  font-family: "lato-light", verdana;
+}
+
+.productsTxt h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* *****************VEGAN SECTION***************** */
+.veganSection {
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.veganDiv {
+  text-align: center;
+  width: 50%;
+}
+
+.veganDiv p:nth-of-type(1) {
+  font-family: "lato-light", verdana;
+  text-transform: uppercase;
+}
+
+.veganDiv h2 {
+  font-family: "cheddar jack", verdana;
+  text-transform: capitalize;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.veganDiv p:nth-of-type(2) {
+  font-family: "lato-light", verdana;
+  margin: 50px 0 25px;
+  line-height: 25px;
+}
+
+.veganDiv p:nth-of-type(3) {
+  font-family: "lato-light", verdana;
+  margin-bottom: 60px;
+  line-height: 25px;
+}
+
+.veganDiv a {
+  text-decoration: none;
+  font-family: "lato-light", verdana;
+  text-transform: uppercase;
+  background-color: #ef84b4;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.veganDiv a:hover {
+  background-color: #b5f3da;
+}
+
+/* ********************FORM SECTION ******************** */
+.formSection {
+  background-color: #ffe7a9;
+  display: flex;
+  justify-content: center;
+}
+
+.formDiv {
+  width: 50%;
+  text-align: center;
+}
+
+.formDiv h4 {
+  font-family: "lato-light", verdana;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+}
+
+.formDiv p {
+  font-family: "lato-light", verdana;
+  line-height: 25px;
+}
+
+form {
+  position: relative;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+}
+
+form button {
+  position: absolute;
+  right: 0%;
+}
