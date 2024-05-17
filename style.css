@@ -13,6 +13,11 @@
   src: url(./assets/fonts/Lulo\ Clean\ W01\ One\ Bold.ttf);
 }
 
+@font-face {
+  font-family: "lato-regular";
+  src: url(./assets/fonts/Lato-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -117,10 +122,17 @@ nav {
   transform: translateX(50%);
   text-decoration: none;
   background-color: #fff;
+  color: #111;
   border: 2px solid #111;
   font-family: "lato-light", verdana;
   text-transform: uppercase;
   padding: 15px 20px;
+}
+
+.bottomDiv a:hover {
+  background-color: #111;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 /* ********************ORIGIN SECTION****************** */
@@ -151,42 +163,74 @@ nav {
   line-height: 24px;
 }
 
-/* ********************************* */
+/* *****************PRODUCTS SECTION**************** */
 .productsSection {
   background-color: #b5f3da;
-  min-height: 670px;
+  padding: 50px 0;
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-.productsContainer {
 }
 
 .gridProducts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.productsContainer {
+  height: 570px;
+  width: 310px;
+  display: grid;
+  grid-template-rows: 50% 50%;
 }
 
 .productsImg {
-  background: url(./assets/img/rio\ roller.webp);
+  background: url(./assets/img/rio\ roller.webp) center/cover;
 }
 
 .productsImg1 {
-  background: url(./assets/img/casque\ rio\ .webp);
+  background: url(./assets/img/casque\ rio\ .webp) center/cover;
 }
 
 .productsImg2 {
-  background: url(./assets/img/rio\ wheels.webp);
+  background: url(./assets/img/rio\ wheels.webp) center/cover;
 }
 
 .productsTxt {
   background-color: #fff;
   font-family: "lato-light", verdana;
+  padding: 40px;
+  position: relative;
 }
 
-.productsTxt h3 {
+.txtDiv {
+  text-align: center;
+}
+
+.txtDiv h3 {
   text-transform: uppercase;
   font-size: 30px;
+}
+
+.txtDiv p {
+  padding: 10px 0;
+  line-height: 25px;
+}
+
+.txtDiv a {
+  background-color: #ef84b4;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 8px 30px;
+  position: absolute;
+  top: 70%;
+  transform: translate(-50%);
+}
+
+.txtDiv a:hover {
+  background-color: #abd7e6;
 }
 
 /* *****************VEGAN SECTION***************** */
@@ -211,7 +255,7 @@ nav {
   font-family: "cheddar jack", verdana;
   text-transform: capitalize;
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .veganDiv p:nth-of-type(2) {
@@ -244,11 +288,11 @@ nav {
   background-color: #ffe7a9;
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 
 .formDiv {
   width: 50%;
-  text-align: center;
 }
 
 .formDiv h4 {
@@ -256,28 +300,177 @@ nav {
   text-transform: uppercase;
   font-size: 40px;
   color: #fff;
+  text-align: center;
 }
 
 .formDiv p {
   font-family: "lato-light", verdana;
   line-height: 25px;
-}
-
-form {
-  position: relative;
+  text-align: center;
+  padding: 20px 0 40px;
 }
 
 .input {
-  display: grid;
-  grid-template-columns: 30% 70%;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.input1 {
+  width: 35%;
+}
+
+.input2 {
+  width: 65%;
+}
+
+textarea,
+input {
+  width: 100%;
+  border: solid 1px #111;
+  background-color: transparent;
+  font-family: "lato-regular", verdana;
+  font-size: 20px;
+  color: #111;
+  padding: 5px;
+  outline: none;
 }
 
 textarea {
-  display: block;
-  width: 100%;
+  resize: none;
+  height: 150px;
 }
 
-form button {
+form ::placeholder {
+  color: #111;
+}
+
+textarea:hover,
+input:hover {
+  background-color: #fff;
+}
+
+.submit {
+  text-align: right;
+  padding-top: 8px;
+}
+
+.submit button {
+  background-color: #111;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "lato-light", verdana;
+  font-size: 16px;
+  padding: 15px 40px;
+}
+
+.submit button:hover {
+  background-color: #fff;
+  color: #111;
+  cursor: pointer;
+}
+
+/* ******************NEWS SECTION ******************* */
+
+.newsContainer h4 {
+  font-family: "lato-regular", verdana;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 60px 0 20px;
+  text-align: center;
+}
+
+.flexNews {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.newsImg1 {
+  background: url(./assets/img/footer\ rio\ 1.webp);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 290px;
+  width: 290px;
+}
+
+.newsImg2 {
+  background: url(./assets/img/footer\ rio\ 2.webp);
+  background-size: cover;
+  height: 290px;
+  width: 290px;
+}
+
+.newsImg3 {
+  background: url(./assets/img/footer\ rio\ 3.webp);
+  background-size: cover;
+  height: 290px;
+  width: 290px;
+}
+
+/* **************PRE FOOTER**************** */
+.preFooterContainer {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preFooterLogo {
+  background: url(./assets/img/rolling\ rio.webp) center/contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.preFooterLogo::after {
+  content: "";
   position: absolute;
-  right: 0%;
+  background-color: #111;
+  height: 2px;
+  width: 100%;
+  bottom: -100%;
+}
+
+/* ****************FOOTER**************** */
+footer {
+  text-align: center;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px 0;
+}
+
+.link {
+  height: 70px;
+  width: 70px;
+  background-color: #111;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link i {
+  color: #fff;
+  font-size: 45px;
+}
+
+footer p {
+  font-family: "lato-light", verdana;
+}
+
+footer p:nth-of-type(1) {
+  text-transform: uppercase;
+  font-family: "lato-regular", verdana;
+}
+
+footer p:nth-of-type(2) {
+  padding: 20px 0;
+  font-family: "lato-light", verdana;
 }

@@ -69,34 +69,40 @@
         <div class="productsContainer">
           <div class="productsImg"></div>
           <div class="productsTxt">
-            <h3>skates</h3>
-            <p>
-              Over 20 different skates in our collection! Click to explore them
-              and find your perfect pair.
-            </p>
-            <a href="">view all</a>
+            <div class="txtDiv">
+              <h3>skates</h3>
+              <p>
+                Over 20 different skates in our collection! Click to explore
+                them and find your perfect pair.
+              </p>
+              <a href="">view all</a>
+            </div>
           </div>
         </div>
         <div class="productsContainer">
           <div class="productsImg1"></div>
           <div class="productsTxt">
-            <h3>protection</h3>
-            <p>
-              A small but colourful collection of pads and helmets to keep you
-              safe! Click to view.
-            </p>
-            <a href="">view all</a>
+            <div class="txtDiv">
+              <h3>protection</h3>
+              <p>
+                A small but colourful collection of pads and helmets to keep you
+                safe! Click to view.
+              </p>
+              <a href="">view all</a>
+            </div>
           </div>
         </div>
         <div class="productsContainer">
           <div class="productsImg2"></div>
           <div class="productsTxt">
-            <h3>accessories</h3>
-            <p>
-              From wheels to bags, to stoppers and bearings. View the full
-              range.
-            </p>
-            <a href="">view all</a>
+            <div class="txtDiv">
+              <h3>accessories</h3>
+              <p>
+                From wheels to bags, to stoppers and bearings. View the full
+                range.
+              </p>
+              <a href="">view all</a>
+            </div>
           </div>
         </div>
       </div>
@@ -132,11 +138,17 @@
         </p>
         <form action="">
           <div class="input">
-            <input type="text" />
-            <input type="text" />
+            <div class="input1">
+              <input type="text" placeholder="Your name *" />
+            </div>
+            <div class="input2">
+              <input type="text" placeholder="Your email *" />
+            </div>
           </div>
-          <textarea id=""></textarea>
-          <button type="submit">hello!</button>
+          <textarea id="" placeholder="Message*"></textarea>
+          <div class="submit">
+            <button type="submit">hello!</button>
+          </div>
         </form>
       </div>
     </section>
@@ -145,25 +157,31 @@
     <section class="newsSection">
       <div class="newsContainer">
         <h4>just arrived!</h4>
-        <div class="gridnews">
+        <div class="flexNews">
           <div class="newsImg1"></div>
           <div class="newsImg2"></div>
           <div class="newsImg3"></div>
         </div>
       </div>
-      <div class="logoNews"></div>
     </section>
+
+    <!-- *****************PRE FOOTER************** -->
+    <div class="preFooterContainer">
+      <div class="preFooterLogo"></div>
+    </div>
 
     <!-- *****************FOOTER***************** -->
     <footer>
-      <div class="divFooter">
-        <div class="iconFooter">
+      <div class="footerIcons">
+        <div class="link">
           <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="link">
           <a href=""><i class="fa-brands fa-instagram"></i></a>
         </div>
-        <p>downloads | collaboration</p>
-        <p>All content copyright © Rio Roller 2023. All Rights Reserved.</p>
       </div>
+      <p>downloads | collaboration</p>
+      <p>All content copyright © Rio Roller 2023. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
