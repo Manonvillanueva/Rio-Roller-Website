@@ -474,3 +474,83 @@ footer p:nth-of-type(2) {
   padding: 20px 0;
   font-family: "lato-light", verdana;
 }
+
+/* *********************MEDIA QUERIES************************ */
+
+@media screen and (max-width: 990px) {
+  .gridProducts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .veganDiv,
+  .formDiv {
+    width: 70%;
+  }
+
+  .flexNews {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    width: 95%;
+  }
+
+  .bottomDiv {
+    min-height: 600px;
+  }
+
+  .gridProducts {
+    grid: none;
+  }
+
+  .veganDiv,
+  .formDiv {
+    width: 90%;
+  }
+
+  .flexNews {
+    flex-wrap: wrap;
+  }
+
+  .preFooterContainer {
+    min-height: 350px;
+  }
+
+  .preFooterLogo::after {
+    width: 0%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navBarLi a {
+    font-size: 11px;
+  }
+
+  .navBarImg {
+    max-width: 80px;
+  }
+
+  .navBottom {
+    padding-top: 125px;
+  }
+
+  .topDiv h1 {
+    font-size: 16px;
+  }
+
+  .bottomDiv {
+    min-height: 400px;
+  }
+
+  .originSection {
+    padding: 0 10px;
+  }
+
+  textarea,
+  input {
+    font-size: 18px;
+  }
+}
